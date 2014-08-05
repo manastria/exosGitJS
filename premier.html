@@ -8,14 +8,18 @@
   <script type="text/javascript">
   <!--
 
-     /* et vous pouvez placer votre code JS ici
-     sans etre inquiete par les vieux navigateurs */
+    function display()
+	{
+		document.getElementById('message').innerHTML = "Bonjour";
+	}
 
   //-->
   </script>
   <!-- en-tete du document -->
 </head>
-<body onload="alert('Bonjour !');" onunload="alert('Au revoir !');">
-  <a href="#" onclick="alert('Coucou !');">lien</a>
+<body>
+  <a href="#" onclick="display();">lien</a>
+  
+  <p id="message"></p>
 </body>
 </html>
